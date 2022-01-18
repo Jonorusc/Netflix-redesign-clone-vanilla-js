@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+        <link rel="shortcut icon" href="assets/img/original-simbolo.png" type="image/x-icon">
+        
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap.css"> 
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>Bem-vindo - Netflix Redesign Clone</title>
+    </head>
+    <body class="rl ladding-page">
+        <div class="super-container">
+            <header class="header">
+                <div class="main_nav_container">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="logo">
+                                    <a href="ladding-page.html">
+                                        <img src="assets/img/logo-mobile.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-end align-items-center">
+                                <nav class="navbar">
+                                    <ul class="navbar_items">
+                                        <li class="navbar_links">
+                                            <a href="login-form.html" class="btn-logIn">Entrar</a>
+                                        </li> 
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- lp(ladding page) -->
+            <main style="background-image: url(./assets/thumbs/hoh.jpg);" class="lp">
+                <div class="overlay">
+                    <div class="container" style="height: 100%;">
+                        <div class="row">
+                            <div class="col-12 div-rl-title">
+                                <h2 class="rl-title">Filmes, séries e muito mais. Sem limites.</h2>
+                            </div>
+                            <div class="col-12" >
+                                <div class="container-fluid">
+                                    <form action="#" class="register">
+                                        <div class="contentInput position-relative d-flex">
+                                            <label for="inputRegister" class="">Email</label>
+                                            <input type="email" id="inputRegister" >
+                                        </div>
+                                        <button type="submit" class="btn-register btn-effect-right" id="clickRegister">
+                                            <span class="d-flex align-items-center"> Vamos lá <i class="fas fa-angle-right"></i> </span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel -->
+                        <div class="rl-slider" id="slider">
+                            <div class="slider-wrapper">
+                                <div class="slides" id="slides">
+                                    <div class="movie-slide slide">
+                                        <img src="assets/thumbs/sex.jpg" alt="">
+                                    </div>
+                                    <div class="movie-slide slide">
+                                        <img src="assets/thumbs/toystory.jpg" alt="">
+                                    </div>
+                                    <div class="movie-slide slide">
+                                        <img src="assets/thumbs/hoh.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end carousel -->
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row mb-5">
+                        <!-- accordion -->
+                        <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
+                            <div class="accordion width-100" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        O que é a Netflix?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A <strong>Netflix</strong> é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e 
+                                            documentários premiados em milhares de aparelhos conectados à internet. <br> <br>
+                                            Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, 
+                                            sem comerciais – tudo por um preço mensal bem acessível. 
+                                            Aqui você sempre encontra novidades. 
+                                            A cada semana, adicionamos novas séries e filmes.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Quanto custa a Netflix?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Assista à <strong>Netflix</strong> no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. 
+                                            Os planos variam de R$25,90 a R$55,90 por mês. 
+                                            Sem contrato nem taxas extras.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Onde posso assistir?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Assista onde quiser, quando quiser. 
+                                            Faça login com sua conta <strong>Netflix</strong> em netflix. 
+                                            com para começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo Netflix, 
+                                            como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames. <br> <br>
+                                            Você também pode baixar a sua série favorita com o aplicativo <strong>Netflix</strong> para iOS,
+                                            Android ou Windows 10. Use downloads para levar a <strong>Netflix</strong> para onde 
+                                            quiser sem precisar de conexão com a Internet. Leve a Netflix com você para qualquer lugar.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading4">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Como faço para cancelar?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A <strong>Netflix</strong> é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento
+                                            – você pode começar ou encerrar a sua assinatura a qualquer momento.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading5">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        O que eu posso assistir na Netflix?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A <strong>Netflix</strong> tem um grande catálogo de filmes, documentários, séries, originais <strong>Netflix</strong> premiados e muito mais. Assista o quanto quiser, quando quiser.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading6">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        A Netflix é adequada para crianças?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A experiência infantil da <strong>Netflix</strong> faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos pais. <br> <br>
+            
+                                            O recurso de controle dos pais, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 d-flex align-items-center justify-content-center">
+                                <a href="#">
+                                    <button class="btn-effect-right btn bd-22 btn-primary">
+                                        <span class="d-flex align-items-center"> Criar minha conta<i class="fas fa-angle-right"></i> </span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- end accordion -->
+                        <!-- footer informations -->
+                        <div class="col-sm-12 col-md-6 ">
+                            <div class="footer-content">
+                                <div class="row mt-5 mb-3">
+                                    <div class="col d-flex justify-content-end align-items-center">
+                                        <span class="doubts">Dúvidas? Ligue 0800-xxx-xxxx</span>
+                                    </div>
+                                    <div class="col d-flex justify-content-end align-items-center">
+                                        <div class="setLanguage d-flex justify-content-center align-items-center">
+                                            <i class="fas fa-globe"></i>
+                                            <select name="language" id="setLanguage">
+                                                <option value="pt_br">Português</option>
+                                                <option value="en">English</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col ">
+                                        <div class="footer-links">
+                                            <ul class="ul-links">
+                                                <li class="ul-links-items"><a href="">Perguntas frequentes</a></li>
+                                                <li class="ul-links-items"><a href="">Relações com investidores</a></li>
+                                                <li class="ul-links-items"><a href="">Formas de assistir</a></li>
+                                                <li class="ul-links-items"><a href="">Informações corporativas</a></li>
+                                                <li class="ul-links-items"><a href="">Só na Netflix</a></li>
+                                            </ul>
+                                            <ul class="ul-links">
+                                                <li class="ul-links-items"><a href="">Centro de ajuda</a></li>
+                                                <li class="ul-links-items"><a href="">Carreiras</a></li>
+                                                <li class="ul-links-items"><a href="">Termos de uso</a></li>
+                                                <li class="ul-links-items"><a href="">Entre em contato</a></li>
+                                            </ul>
+                                            <ul class="ul-links">
+                                                <li class="ul-links-items"><a href="">Conta</a></li>
+                                                <li class="ul-links-items"><a href="">Resgatar cartão pré-pago</a></li>
+                                                <li class="ul-links-items"><a href="">Privacidade</a></li>
+                                                <li class="ul-links-items"><a href="">Teste de velocidade</a></li>
+                                            </ul>
+                                            <ul class="ul-links">
+                                                <li class="ul-links-items"><a href="">Imprensa</a></li>
+                                                <li class="ul-links-items"><a href="">Comprar cartão pré-pago</a></li>
+                                                <li class="ul-links-items"><a href="">Preferências de cookies</a></li>
+                                                <li class="ul-links-items"><a href="">Avisos legais</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <div class="footerLogo">
+                                            <img src="assets/img/original-logo.png" alt="">
+                                        </div>
+                                        <span class="sign-it"><a href="#">assine agora</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end footer informations -->
+                    </div>
+                </div>  
+            </footer>
+        </div>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/useful.js"></script>
+        <script src="./assets/js/rl.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+        <link rel="shortcut icon" href="assets/img/original-simbolo.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap.css"> 
+
+         <title>Bem-vindo - Netflix Redesign Clone</title>
+
+         <style>
+            body{
+                overflow: hidden;
+                height: 100vh;
+                background: url(./assets/thumbs/sex.jpg);
+                background-position: center top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+            }
+            .blur{
+                background: inherit;
+                filter: blur(8px);
+                border: 1px solid;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+            }
+            .logOut,
+            .configurations{
+                font-size: 20px;
+                cursor: pointer;
+                position: relative;
+            }
+            .logOut::after{
+                content: attr(data-name);
+                position: absolute;
+                color: #f2f2f2;
+                font-size: 11px;
+                left: 0;
+                transform: translate(-70px, 50%);
+                visibility: hidden;
+            }
+            .configurations::after{
+                content: attr(data-name);
+                position: absolute;
+                color: #f2f2f2;
+                font-size: 11px;
+                left: 0;
+                transform: translate(-80px, 50%);
+                visibility: hidden;
+            }
+            .logOut:hover::after,
+            .configurations:hover::after{
+                visibility: visible;
+            }
+            a{
+                
+                color: #f2f2f2;
+            }
+            a:hover{
+                color: white;
+            }
+            main{
+                height: 100vh;
+                margin-top: 5rem;
+            }
+            .content{
+                display: flex;
+                column-gap: 0.5rem;
+            }
+            .imgBx{
+                width: 80px;
+                height: 80px;
+                border-radius: 8px;
+                position: relative;
+            }
+            .imgBx img{
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+            .hover{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: none;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                transition: all 0.5s ease;
+                cursor: pointer;
+                border-radius: 8px;
+            }
+            .hover button{
+                border: none;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                color: #e50914;
+                font-size: 20px;
+            }
+            .imgBx:hover .hover{
+                display: grid;
+                place-items: center;
+            }
+            .text-name{
+                font-size: 16px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1024px){
+                .imgBx{
+                    width: 175px;
+                    height: 175px;
+                }
+                .text-name{
+                    font-size: 18px;
+                }   
+            }
+            @media only screen and (min-width: 1024px){
+                .imgBx{
+                    width: 234px;
+                    height: 234px;
+                }
+                .text-name{
+                    font-size: 20px;
+                } 
+            }
+        </style>
+    </head>
+    <body class="">
+        <div class="blur"></div>
+        <div class="">
+            <div class="container">
+                <nav style="padding: 0.5rem;">
+                    <div style="width: 120px;">
+                        <img src="assets/img/original-logo.png" style="width: 150px;">
+                    </div>
+        
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="configurations" data-name="configurações">
+                            <a href="#">
+                                <i class="fas fa-user-cog"></i>
+                            </a>
+                        </div>
+                        <div class="logOut" data-name="sair">
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <main>
+                <div class="container">
+                    <div class="row text-uppercase text-white">
+                        <h1 class="text-center" style="letter-spacing: 1px; padding: 1rem;">Quem está assistindo?</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="content">
+                                    <div class="imgBx">
+                                        <img src="assets/img/profile/default.jpg">
+                                        <div class="hover">
+                                            <button class="play"><i class="fas fa-play"></i></button>
+                                        </div>
+                                        <h3 class="text-name text-center text-white p-2">Erick</h3>
+                                    </div>
+                                    <div class="imgBx">
+                                        <img src="assets/img/profile/default.jpg">
+                                        <div class="hover">
+                                            <button class="play"><i class="fas fa-play"></i></button>
+                                        </div>
+                                        <h3 class="text-name text-center text-white p-2">Ciro</h3>
+                                    </div>
+                                    <div class="imgBx">
+                                        <img src="assets/img/profile/default.jpg">
+                                        <div class="hover">
+                                            <button class="play"><i class="fas fa-play"></i></button>
+                                        </div>
+                                        <h3 class="text-name text-center text-white p-2">Lima</h3>
+                                    </div>
+                                    <div class="imgBx">
+                                        <img src="assets/img/profile/default.jpg">
+                                        <div class="hover">
+                                            <button class="play"><i class="fas fa-play"></i></button>
+                                        </div>
+                                        <h3 class="text-name text-center text-white p-2">Ribamar</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

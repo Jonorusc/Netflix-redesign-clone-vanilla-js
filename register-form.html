@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+        <link rel="shortcut icon" href="assets/img/original-simbolo.png" type="image/x-icon">
+        
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap.css"> 
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>Bem-vindo - Netflix Redesign Clone</title>
+    </head>
+    <body class="rl rl-register">
+        <div class="super-container register-page">
+            <header class="header">
+                <div class="main_nav_container">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="logo">
+                                    <a href="ladding-page.html">
+                                        <img src="assets/img/original-simbolo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-end align-items-center">
+                                <nav class="navbar">
+                                    <ul class="navbar_items">
+                                        <li class="navbar_links">
+                                            <a href="login-form.html" class="btn-logIn">Entrar</a>
+                                        </li> 
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- RP(register page) -->
+            <main class="rp"> 
+                <div class="container">
+                    <h3>Complete seus dados</h3>
+                    <form action="" method="get" class="padding-1rem">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="progressbar text-primary">
+                                    <div class="progress" id="progress"></div>
+        
+                                    <div class="progressStep progressStep-active" data-title="Informações"><i class="fas fa-user"></i></div>
+                                    <div class="progressStep " data-title="Plano"><i class="fas fa-tv"></i></div>
+                                    <div class="progressStep " data-title="Termos"><i class="fas fa-sticky-note"></i></div>
+                                    <div class="progressStep " data-title="Pagamento"><i class="fas fa-credit-card"></i></div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="row ">
+                           <div class="col-12 form-register">
+                                <!-- forms -->
+                                <!-- info(informações) -->
+                                <div class="form active">
+                                    <div class="inputGroup">
+                                        <input type="text" placeholder=" " class="input-effect" id="firtsName">
+                                        <label for="firtsName">Nome</label>
+                                    </div>
+                                    <div class="inputGroup">
+                                        <input type="text" placeholder=" " class="input-effect" id="familyName">
+                                        <label for="familyName">Sobrenome</label>
+                                    </div>
+                                    <div class="inputGroup">
+                                        <input type="email" placeholder=" " class="input-effect" id="email">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="inputGroup">
+                                        <input type="password" placeholder=" " class="input-effect" id="password">
+                                        <label for="password">Senha</label>
+                                    </div>
+                                    <div class="inputGroup">
+                                        <input type="password" placeholder=" " class="input-effect" id="password_confirmation">
+                                        <label for="password_confirmation">Confirme sua senha</label>
+                                    </div>
+                                    <div class="inputCheck d-flex align-items-center justify-content-end gap-2">
+                                        <a href="#" class="btn btn-primary btn-next">Avançar</a>
+                                    </div>
+                                </div>
+                                <!-- end info(informações) -->
+                                <!-- servicesCategories(plano) -->
+                                <div class="form">
+                                    <div class="service active">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="serviceLogo">
+                                                    <i class="fas fa-desktop active"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 ">
+                                                <div class="serviceContent" >
+                                                    <input type="checkbox" class="s-check" name="basic" id="basic_service" autocomplete="off" checked>
+                                                    <label for="basic_service" class="btn-service servicesLabel">
+                                                        <span>Plano básico</span> <br> assista somente em um dispositivo
+                                                        <span class="price">R$15,00</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="serviceLogo">
+                                                    <i class="fas fa-mobile-alt"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 ">
+                                                <div class="serviceContent" >
+                                                    <input type="checkbox" class="s-check" name="premium" id="premium_service" autocomplete="off">
+                                                    <label for="premium_service" class="btn-service servicesLabel">
+                                                        <span>Plano premium</span> <br> assista em até 4 dispositivos com alta resolução
+                                                        <span class="price">R$35,00</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inputCheck d-flex align-items-center justify-content-end gap-2">
+                                        <a href="#" class="btn btn-outline-primary btn-prev">Voltar</a>
+                                        <a href="#" class="btn btn-primary btn-next">Avançar</a>
+                                    </div>
+                                </div>
+                                <!-- end servicesCategories(plano) -->
+                                <!-- terms(termos) -->
+                                <div class="form">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <!-- Button trigger modal -->
+                                            Você precisa ler os termos de responsabilidade antes de prosseguir com a assinatura.
+                                            <button type="button" class="btn btn-primary d-block mt-4 checkTerms" data-bs-toggle="modal" data-bs-target="#reading-terms">
+                                                Ler termos
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="reading-terms" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Termos</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- resume -->
+                                                        <strong>Plano escolhido</strong>: <span class="chosen-plan"></span> <br>
+                                                        <strong>Preço</strong>: <span class="price-plan"></span> <br>
+                                                        <!-- term -->
+                                                        <strong>Termo fictício</strong> Função é uma regra que relaciona cada elemento de um conjunto 
+                                                        (representado pela variável x) a um único elemento de outro conjunto 
+                                                        (representado pela variável y). Para cada valor de x, 
+                                                        podemos determinar um valor de y, dizemos então que “y está em função de x”.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <input type="checkbox" name="aceptedTerms" class="v-check" id="aceptedTerms" autocomplete="off" required>
+                                                        <label for="aceptedTerms" class="btn btn-primary" data-bs-dismiss="modal" >Aceitar termos</label>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inputCheck d-flex align-items-center justify-content-end gap-2">
+                                        <a href="#" class="btn btn-outline-primary btn-prev">Voltar</a>
+                                        <a href="#" class="btn btn-primary btn-next">Avançar</a>
+                                    </div>
+                                </div>
+                                <!-- end terms(termos) -->
+                                <!-- payment(pagamento) -->
+                                <div class="form">
+                                    <div class="row">
+                                        <div class="col-12 paypal-img">
+                                            <img src="assets/img/paypal.png" class="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                         <div class="col-12">
+                                             <div class="payment">
+                                                 <button class="btn-paypal">Pagar com PAYPAL</button>
+                                             </div>
+                                         </div>
+                                    </div>
+                                    <div class="inputCheck d-flex align-items-center justify-content-end gap-2">
+                                        <a href="#" class="btn btn-outline-primary btn-prev">Voltar</a>
+                                        <!--Avançar -->
+                                    </div>
+                                 </div>
+                                 <!-- end payment(pagamento) -->
+                                <!-- end forms -->
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/rl.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+

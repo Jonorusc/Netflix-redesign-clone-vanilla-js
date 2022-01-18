@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiblse" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+        
+        <link rel="shortcut icon" href="assets/img/original-simbolo.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap.css"> 
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>Netflix - Redesign Clone</title>
+    </head>
+    <body class="index">
+        <!-- SIDEBAR -->
+        <aside class="sidebar d-flex justify-content-center">
+            <div class="side-content">
+                <div class="side-logo">
+                    <a href="index.html"><img src="assets/img/logo-mobile.png"></a>
+                </div>
+                <div class="side-buttons">
+                    <div class="d-flex flex-column gap-2 align-items-center actions">
+                        <a href="#notificacoes" class="btn-notifications"><i class="far fa-bell btn-notification active"></i></a> <!-- fas fa-bell-slash -->
+                        <a href="#Configuracoes" class="btn-config"><i class="fas fa-sliders-h"></i></a>
+                    </div>
+                    <div class="persons">
+                        <button class="toolTip right" title="Ausente" style="background-image: url(./assets/img/profile/jon3.jpeg);"></button>
+                        <button class="toolTip right" title="Assistindo Vikings" style="background-image: url(./assets/img/profile/default.jpg);"></button>
+                        <button class="toolTip right" title="Off-line" style="background-image: url(./assets/img/profile/jon2.jpg);"></button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- END SIDEBAR -->
+        <!-- CONFIGURATIONS -->
+        <div class="configurations configurations-js">
+            <div class="container">
+                <div class="row d-md-none">
+                    <div class="col-12">
+                        <div class="searchBar">
+                            <input type="text" class="search" placeholder="pesquisar por filmes...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="tabContainer">
+                            <div class="tabHeader">
+                                <button class="btn-tab" data-target-tab="#tabUsers"><i class="fas fa-users"></i> Usuários</button>
+                                <button class="btn-tab active" data-target-tab="#tabSettings"><i class="fas fa-cog"></i> Conta</button>
+                                <button class="btn-tab" data-target-tab="#tabPayments"><i class="far fa-credit-card"></i> Pagamentos</button>
+                                <button class="btn-tab" data-target-tab="#tabLogOut"><i class="fas fa-window-close"></i> Sair</button>
+                            </div>
+                            <div class="tabBody">
+                                <div class="tab-content" id="tabUsers">
+                                    <div>
+                                        <div class="users-grid grid-column-4">
+                                            <div class="user-edit">
+                                                <form action="#" class="">
+                                                    <div class="img-users user-0" style="background-image: url(assets/img/profile/jon.jpeg);">
+                                                        <input type="file" id="img_users-0" class="s-check file-img-js ">
+                                                        <label for="img_users-0">Atualizar</label>
+                                                    </div>
+                                                    <div class="edit-users text-center">
+                                                        <span class="username">Apelido</span>
+                                                        <div>
+                                                            <input type="text" disabled placeholder="Usuário" id="username-0" class="text-white">
+                                                            <label for="username" data-id="0" class="username--js"><i class="fas fa-pen"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn-sm btn-primary">Salvar</button>
+                                                </form>
+                                            </div>
+                                            <div class="user-edit">
+                                                <form action="#" >
+                                                    <div class="img-users user-1" style="background-image: url(assets/img/profile/jon3.jpeg);">
+                                                        <input type="file" id="img_users-1" class="s-check file-img-js">
+                                                        <label for="img_users-1">Atualizar</label>
+                                                    </div>
+                                                    <div class="edit-users text-center">
+                                                        <span class="username">Apelido</span>
+                                                        <div>
+                                                            <input type="text" disabled placeholder="Usuário" id="username-1" class="text-white">
+                                                            <label for="username-1" data-id="1" class="username--js"><i class="fas fa-pen"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn-sm btn-primary">Salvar</button>
+                                                </form>
+                                            </div>
+                                            <div class="user-edit">
+                                                <form action="#" >
+                                                    <div class="img-users user-2" style="background-image: url(assets/img/profile/default.jpg);">
+                                                        <input type="file" id="img_users-2" class="s-check file-img-js">
+                                                        <label for="img_users-2">Atualizar</label>
+                                                    </div>
+                                                    <div class="edit-users text-center">
+                                                        <span class="username">Apelido</span>
+                                                        <div>
+                                                            <input type="text" disabled placeholder="Usuário" id="username-2" class="text-white">
+                                                            <label for="username-2" data-id="2" class="username--js"><i class="fas fa-pen"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn-sm btn-primary">Salvar</button>
+                                                </form>
+                                            </div>
+                                            <div class="user-edit">
+                                                <form action="#" >
+                                                    <div class="img-users user-3" style="background-image: url(assets/img/profile/jon2.jpg);">
+                                                        <input type="file" id="img_users-3" class="s-check file-img-js">
+                                                        <label for="img_users-3">Atualizar</label>
+                                                    </div>
+                                                    <div class="edit-users text-center">
+                                                        <span class="username">Apelido</span>
+                                                        <div>
+                                                            <input type="text" disabled placeholder="Usuário" id="username-3" class="text-white">
+                                                            <label for="username-3" data-id="3" class="username--js"><i class="fas fa-pen"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn-sm btn-primary">Salvar</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content active" id="tabSettings">
+                                    <div class="row mt-3">
+                                        <div class="col-sm-12 col-md-6" >
+                                            <h5>Dados cadastrais</h5>
+                                            <form action="#" class="accountForm mt-4 mb-4">
+                                                <div class="inputGroup mb-4">
+                                                    <input type="text" placeholder=" " class="input-effect w-100 bg-transparent text-white" id="firtsName">
+                                                    <label for="firtsName">Nome</label>
+                                                </div>
+                                                <div class="inputGroup mb-4">
+                                                    <input type="text" placeholder=" " class="input-effect w-100 bg-transparent text-white" id="familyName">
+                                                    <label for="familyName">Sobrenome</label>
+                                                </div>
+                                                <div class="inputGroup mb-4">
+                                                    <input type="text" placeholder=" " class="input-effect w-100 bg-transparent text-white" id="email">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                                <div class="inputGroup mb-4">
+                                                    <input type="text" placeholder=" " class="input-effect w-100 bg-transparent text-white" id="password">
+                                                    <label for="password">Senha</label>
+                                                </div>
+                                                <div class="inputGroup mb-4">
+                                                    <input type="text" placeholder=" " class="input-effect w-100 bg-transparent text-white" id="password_confirmation">
+                                                    <label for="password_confirmation">Confirme sua senha</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salvar</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 set-center flex-column">
+                                            <h5 class="d-block">Cancelar minha conta</h5>
+                                            <a href="#" class="btn btn-primary">Confirmar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="tabPayments">
+                                    Próxima cobrança em: 15 dias
+                                    <br>
+                                    Pagamentos realizados:
+                                    <div class="accomplished-payments">
+                                        <div class="p-2 text-green">
+                                            <ol>
+                                                <li>Dezembro - 2021: R$35,00</li>
+                                                <li>Janeiro - 2022: R$35,00</li>
+                                                <li>Fevereiro - 2022: R$35,00</li>
+                                                <li>Março - 2022: R$15,00 <span class="text-warning">trocou para o plano básico</span></li>
+                                                <li>Abril - 2022: <span class="text-danger">pendente</span></li>
+                                              </ol>
+                                        </div>
+                                        As cobranças ocorrem a cada 30 dias, caso não seja efetuado o pagamento em 24h a sua conta ficará inativa
+                                        <!-- <div class="m-2">
+                                            forma de pagamento: paypal
+                                            <button class="btn btn-primary">Efetuar pagamento</button>
+                                        </div> -->
+                                        <div class="mt-4 text-center">
+                                            <h5>Alterar forma de pagamento</h5>
+                                            <button class="btn btn-primary ">Cartão de débito/crédito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="tabLogOut">
+                                    <div class="d-grid gap-2 text-center">
+                                        Deseja sair? <br>
+                                        Será necessário fazer log-in novamente para ter acesso aos recursos do site
+                                        <div>
+                                            <a href="#sair" class="btn btn-warning">Confirmar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notifications notifications-js ">
+            <div class="row">
+                <div class="col-12">
+                    <div class="notifications-wrapper">
+                        <div class="client-message">
+                            <span class="message_text">08/01/2022: Sua fatura vence em 15 dias</span>
+                        </div>
+                        <div class="client-message">
+                            <span class="message_text">27/12/2021: Você alterou seu plano para o básico</span>
+                        </div>
+                        <div class="admin-message">
+                            <span class="message_text">Netflix: Toystory 2 está chegando</span>
+                            <div class="image">
+                                <img src="assets/thumbs/toystory.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CONFIGURATIONS -->
+        <div class="adjust-left">
+            <!-- HEADER -->
+            <header style="background-image: url(./assets/thumbs/toystory.jpg)">
+                <div class="bg-84"></div>
+                <div class="bg-linear-90-153-48-360" id="initBackground">
+                    <!-- NAVBAR -->
+                    <section class="responsive-navbar">
+                        <nav class="navbar d-md-none">
+                            <div class="container">
+                                <div class="navbar_logo navbar-brand">
+                                    <a href="index.html"><img src="assets/img/logo-mobile.png"></a>
+                                </div>
+                                <div class="rightItems">
+                                    <ul class="navbar__list">
+                                        <li class="navbar__link"><a href="#">Categorias</a></li>
+                                        <div class="navbar__link navbar_profile_photo">
+                                            <img src="assets/img/profile/jon.png" alt="">
+                                        </div>
+                                        <a href="#" class="btn-config set-grid-center"><i class="fas fa-sliders-h" ></i></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <nav class="navbar d-none d-md-block">
+                            <div class="container">
+                                <div class="leftItems">
+                                    <div class="left-profile">
+                                        <img src="assets/img/profile/jon.png" alt="">
+                                    </div>
+                                    <div class="searchBar">
+                                        <input type="text" class="search" placeholder="pesquisar por...">
+                                    </div>
+                                </div>
+                                <div class="rightItems">
+                                    <ul class="navbar__list">
+                                        <li class="navbar__link"><a href="#">Minha Lista</a></li>
+                                        <li class="navbar__link"><a href="#">Categorias</a></li>
+                                        <li class="navbar__link"><a href="#">Originais</a></li>
+                                        <li class="navbar__link"><a href="#">TV Shows</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </section>
+                    <!-- END NAVBAR -->
+                    <!-- PREVIEW -->
+                    <section class="preview" style="height: 600px;">
+                        <div class="container">
+                            <div class="row mt-sm-3 mt-md-5" style="height: 500px;">
+                                <div class="col-sm-12 col-lg-6 col-md-6">
+                                    <h4 class="d-inline-block">Toystory</h4>
+                                    <select name="season" id="setSeason" class="">
+                                        <option value="1">1º temporada</option>
+                                        <option value="2">2º temporada</option>
+                                    </select>
+                                    <div class="useful-season-buttons">
+                                        <div class="d-flex gap-3">
+                                            <a href="#" class="useful-season-button "><i class="far fa-thumbs-up"></i></a>
+                                            <a href="#" class="useful-season-button "><i class="far fa-thumbs-down"></i></a>
+                                            <a href="#" class="useful-season-button "><i class="fas fa-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 col-md-6 set-grid-center mt-4">
+                                    <a href="#" class="useful-season-play"><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 col-md-6 sinopse" >
+                                    <h5>Sinópse</h5>
+                                    <div class="sinopse-title">
+                                        Uma coisa acontece neste filme, abacates morrerão com muita fome de fonte de calor 
+                                        linear vindo do poço de assú, mas calma, nem tudo é o que parece. 
+                                        Na segunda-feira ele comeu uma fruta vermelha e ficou bem do poço de assú, mas calma, nem tudo é o que parece. 
+                                        Na segunda-feira ele comeu uma fruta vermelha e ficou bem.
+                                    </div>
+                                    <div class="rating-count mt-2 text-green">128 pessoas gostaram | 85%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END PREVIEW -->
+                </div>
+            </header>
+            <!-- END HEADER -->
+            <!-- MAIN -->
+            <main class="down">
+                <div class="container movie-node" style="height: 100%; margin-right: 0!important; padding-right: 0!important;">
+                    <section class="movie">
+                        <h2 class="movie-title">Episódios</h2>
+                        <div class="movie-slider">
+                            <div class="movie-wrapper">
+                                <div class="movie-slides"> 
+                                    <div class="movie-slide" style="background-image: url(./assets/thumbs/toystory.jpg);">
+                                        <div class="movie-hover">
+                                            <div class="buttons">
+                                                <a href="# "class="btn-play"><i class="fas fa-play"></i></a>
+                                                <div class="d-flex gap-3">
+                                                    <a href="#" class="btn-like"><i class="far fa-thumbs-up"></i></a>
+                                                    <a href="#" class="btn-dislike"><i class="far fa-thumbs-down"></i></a>
+                                                    <a href="#" class="btn-mylist"><i class="fas fa-plus-circle"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="resume">
+                                                <span class="title">Titulo normal</span>
+                                                <span class="rating">95% gostaram</span>
+                                                <span class="date">2013</span>
+                                                <span class="resume-text">Eu quero saber o por que que o gato mia</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="movie-slide" style="background-image: url(./assets/thumbs/sex.jpg);">
+                                        <div class="movie-hover">
+                                            <div class="buttons">
+                                                <a href="# "class="btn-play"><i class="fas fa-play"></i></a>
+                                                <div class="d-flex gap-3">
+                                                    <a href="#" class="btn-like"><i class="far fa-thumbs-up"></i></a>
+                                                    <a href="#" class="btn-dislike"><i class="far fa-thumbs-down"></i></a>
+                                                    <a href="#" class="btn-mylist"><i class="fas fa-plus-circle"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="resume">
+                                                <span class="title">Titulo normal</span>
+                                                <span class="rating">95% gostaram</span>
+                                                <span class="date">2013</span>
+                                                <span class="resume-text">Eu quero saber o por que que o gato mia</span>
+                                            </div>
+                                        </div>              
+                                    </div>
+                                    <div class="movie-slide" style="background-image: url(./assets/thumbs/hoh.jpg);">
+                                        <div class="movie-hover">
+                                            <div class="buttons">
+                                                <a href="# "class="btn-play"><i class="fas fa-play"></i></a>
+                                                <div class="d-flex gap-3">
+                                                    <a href="#" class="btn-like"><i class="far fa-thumbs-up"></i></a>
+                                                    <a href="#" class="btn-dislike"><i class="far fa-thumbs-down"></i></a>
+                                                    <a href="#" class="btn-mylist"><i class="fas fa-plus-circle"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="resume">
+                                                <span class="title">Titulo normal</span>
+                                                <span class="rating">95% gostaram</span>
+                                                <span class="date">2013</span>
+                                                <span class="resume-text">Eu quero saber o por que que o gato mia</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="movie-slide" style="background-image: url(./assets/thumbs/sex.jpg);">
+                                        <div class="movie-hover">
+                                            <div class="buttons">
+                                                <a href="# "class="btn-play"><i class="fas fa-play"></i></a>
+                                                <div class="d-flex gap-3">
+                                                    <a href="#" class="btn-like"><i class="far fa-thumbs-up"></i></a>
+                                                    <a href="#" class="btn-dislike"><i class="far fa-thumbs-down"></i></a>
+                                                    <a href="#" class="btn-mylist"><i class="fas fa-plus-circle"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="resume">
+                                                <span class="title">Titulo normal</span>
+                                                <span class="rating">95% gostaram</span>
+                                                <span class="date">2013</span>
+                                                <span class="resume-text">Eu quero saber o por que que o gato mia</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="movie-slide" style="background-image: url(./assets/thumbs/hoh.jpg);">
+                                        <div class="movie-hover">
+                                            <div class="buttons">
+                                                <a href="# "class="btn-play"><i class="fas fa-play"></i></a>
+                                                <div class="d-flex gap-3">
+                                                    <a href="#" class="btn-like"><i class="far fa-thumbs-up"></i></a>
+                                                    <a href="#" class="btn-dislike"><i class="far fa-thumbs-down"></i></a>
+                                                    <a href="#" class="btn-mylist"><i class="fas fa-plus-circle"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="resume">
+                                                <span class="title">Titulo normal</span>
+                                                <span class="rating">95% gostaram</span>
+                                                <span class="date">2013</span>
+                                                <span class="resume-text">Eu quero saber o por que que o gato mia</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- END MAIN -->
+            <!-- FOOTER -->
+            <footer>
+                <div class="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                                <div class="ul">
+                                    <ul>
+                                        <li><a href="#">Minha lista</a></li>
+                                        <li><a href="#">Pagamento</a></li>
+                                        <li><a href="#">Cancelar minha conta</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                                <a href="">
+                                    <img src="assets/img/original-logo.png" class="footer-logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- END FOOTER -->
+        </div>
+        <!-- MAIN JAVASCRIPT -->
+        <script src="./assets/js/useful.js"></script>
+        <script src="./assets/js/header.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <!-- END MAIN JAVASCRIPT -->
+    </body>
+</html>
